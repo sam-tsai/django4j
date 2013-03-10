@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>test index.get()</title>
+	</head>
+	<body>
+		{{hello}}
+		<br/>
+		
+		{%if userList.size == 2%}
+			there are to users:<br/>
+			{%for user in userList%}
+				{{user}}<br/>
+			{%endfor%}
+		{%else%}
+			the users less than 2<br/>
+		{%endif%}
+	</body>
+</html>
