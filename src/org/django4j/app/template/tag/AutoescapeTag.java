@@ -22,7 +22,7 @@ public class AutoescapeTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content) {
+                           final RootNode rootNode, final Node parentNode, final String content) {
         return new AutoescapeNode(tEngine, rootNode, parentNode, content);
     }
 
@@ -30,10 +30,10 @@ public class AutoescapeTag extends WithEndTag {
 
 class AutoescapeNode extends FloderNode {
     private static final String ON = "on";
-    private final boolean       bEscape;
+    private final boolean bEscape;
 
     public AutoescapeNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content) {
+                          final RootNode rootNode, final Node parentNode, final String content) {
         super(rootNode, parentNode, content);
         bEscape = ON.equalsIgnoreCase(content);
     }

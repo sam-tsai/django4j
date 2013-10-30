@@ -5,7 +5,7 @@ import org.django4j.app.template.RenderContext;
 
 public class RawNode extends Node {
     public RawNode(final RootNode rootNode, final Node parentNode,
-            final String content) {
+                   final String content) {
         super(rootNode, parentNode, content);
     }
 

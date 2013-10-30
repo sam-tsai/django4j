@@ -1,9 +1,5 @@
 package org.django4j.app.template.tag;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.app.template.ast.Node;
@@ -14,6 +10,10 @@ import org.django4j.app.template.expr.IExprNode;
 import org.django4j.app.template.expr.ast.ExprArrayNode;
 import org.django4j.app.template.expr.operator.JustParserOperator;
 import org.django4j.app.template.tag.abstract_.WithEndTag;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 public class WithTag extends WithEndTag {
     @Override
@@ -28,7 +28,7 @@ public class WithTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new WithNode(rootNode, parentNode, content);
     }
@@ -39,7 +39,7 @@ class WithNode extends Node {
     private final Map<String, IExprNode> paramContext = new HashMap<String, IExprNode>();
 
     public WithNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                    final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode exprNode = (new ExprParser(content))
                 .parse(new JustParserOperator());

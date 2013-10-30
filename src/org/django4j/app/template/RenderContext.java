@@ -1,9 +1,9 @@
 package org.django4j.app.template;
 
-import java.util.Map;
-
 import org.django4j.context.Dictionary;
 import org.django4j.context.ParentDictionary;
+
+import java.util.Map;
 
 public class RenderContext extends ParentDictionary<Object> {
 
@@ -12,7 +12,7 @@ public class RenderContext extends ParentDictionary<Object> {
     }
 
     public static RenderContext getChild(final Dictionary<Object> parent,
-            final Map<String, Object> map) {
+                                         final Map<String, Object> map) {
         return new RenderContext(parent, map);
     }
 
@@ -25,7 +25,7 @@ public class RenderContext extends ParentDictionary<Object> {
     }
 
     public RenderContext(final Dictionary<Object> parent,
-            final Map<String, Object> map) {
+                         final Map<String, Object> map) {
         super(parent, map);
     }
 

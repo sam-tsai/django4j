@@ -1,8 +1,8 @@
 package org.django4j.app.template.expr.operator;
 
-import java.util.Map;
-
 import org.django4j.app.template.expr.IExprOperator;
+
+import java.util.Map;
 
 public abstract class AbstractOperator implements IExprOperator {
     private final Map<String, Integer> opMap;

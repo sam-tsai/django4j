@@ -1,24 +1,24 @@
 package org.django4j.app.template;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.django4j.app.template.token.Token;
 import org.django4j.app.template.token.TokenConst;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tokenizer {
-    private int          curPos     = 0;
+    private int curPos = 0;
 
     private final char[] is;
 
-    private int          length     = 0;
+    private int length = 0;
 
-    private int          tokenKind  = -1;
+    private int tokenKind = -1;
 
-    private int          tokenStart = 0;
+    private int tokenStart = 0;
 
-    private int          lineNum    = 0;
-    private int          colNum     = 0;
+    private int lineNum = 0;
+    private int colNum = 0;
 
     public Tokenizer(final String inputstream) {
         is = inputstream.toCharArray();
@@ -51,8 +51,8 @@ public class Tokenizer {
                 }
                 if ((is[curPos] == '}')
                         && ((tokenKind == TokenConst.TOKEN_VARIABLE && c == '}')
-                                || (tokenKind == TokenConst.TOKEN_COMMENT && c == '#')
-                                || (tokenKind == TokenConst.TOKEN_TAG && c == '%') || (tokenKind == TokenConst.TOKEN_RAW && c == '-'))) {
+                        || (tokenKind == TokenConst.TOKEN_COMMENT && c == '#')
+                        || (tokenKind == TokenConst.TOKEN_TAG && c == '%') || (tokenKind == TokenConst.TOKEN_RAW && c == '-'))) {
                     newToken(tokenKind, tokenStart, curPos - 1, lineNum,
                             colNum, lsToken);
                     tokenKind = TokenConst.TOKEN_HTML;
@@ -65,7 +65,7 @@ public class Tokenizer {
     }
 
     private void newToken(final int tokenKind, final int start, final int end,
-            final int linenum, final int colnum, final List<Token> lsToken) {
+                          final int linenum, final int colnum, final List<Token> lsToken) {
         if (start < end) {
             lsToken.add(Token.newToken(tokenKind, linenum, colnum,
                     String.valueOf(is, start, end - start)));

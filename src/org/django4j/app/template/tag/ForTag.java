@@ -21,7 +21,7 @@ public class ForTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content) {
+                           final RootNode rootNode, final Node parentNode, final String content) {
         return new ForNode(rootNode, parentNode, content);
     }
 }
@@ -30,12 +30,12 @@ class ForNode extends Node {
     private static final String $FOR_INDEX_0 = "$for_index_0";
     private static final String $FOR_INDEX_1 = "$for_index_1";
 
-    private String              expContent   = "";
+    private String expContent = "";
 
-    private String              varName      = "";
+    private String varName = "";
 
     public ForNode(final RootNode rootNode, final Node parentNode,
-            final String content) {
+                   final String content) {
         super(rootNode, parentNode, content);
         final String[] content_split = content.split(" in ");
         varName = content_split[0];

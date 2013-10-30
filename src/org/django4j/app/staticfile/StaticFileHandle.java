@@ -1,25 +1,24 @@
 package org.django4j.app.staticfile;
 
-import java.io.File;
-import java.net.URL;
-import java.util.HashMap;
-import java.util.Map;
-
-import javax.servlet.ServletResponse;
-
 import org.django4j.DjangoConst;
-import org.django4j.api.IRequest;
-import org.django4j.api.IResponse;
+import org.django4j.api.http.IRequest;
+import org.django4j.api.http.IResponse;
 import org.django4j.app.handleroute.IHandle;
 import org.django4j.app.template.TemplateConst;
 import org.django4j.context.AppContext;
 import org.django4j.context.Context;
 import org.django4j.util.DjangoUtils;
 
+import javax.servlet.ServletResponse;
+import java.io.File;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+
 public class StaticFileHandle implements IHandle {
     @Override
     public void exec(IRequest request, IResponse response1,
-            final AppContext appContext, final Context cfgContext)
+                     final AppContext appContext, final Context cfgContext)
             throws Exception {
         final String filePath = cfgContext.get(DjangoConst.$CUR_URL);
         final URL url = DjangoUtils.getResource(filePath);
@@ -43,8 +42,9 @@ public class StaticFileHandle implements IHandle {
 }
 
 class StaticFileUtil {
-    private static final String              MIME_DEFAULT  = "application/octet-stream";
+    private static final String MIME_DEFAULT = "application/octet-stream";
     private static final Map<String, String> MIME_TYPE_MAP = new HashMap<String, String>();
+
     static {
         MIME_TYPE_MAP.put("css", "text/css");
         MIME_TYPE_MAP.put("htm", "text/html");

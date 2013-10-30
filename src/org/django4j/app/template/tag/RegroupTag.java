@@ -1,10 +1,5 @@
 package org.django4j.app.template.tag;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.app.template.ast.Node;
@@ -21,6 +16,11 @@ import org.django4j.app.template.tag.abstract_.SingleTag;
 import org.django4j.app.template.utils.reflect.DotExpr;
 import org.django4j.app.template.utils.reflect.IterObject;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class RegroupTag extends SingleTag {
     @Override
     public String getName() {
@@ -29,7 +29,7 @@ public class RegroupTag extends SingleTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new RegroupNode(rootNode, parentNode, content);
     }
@@ -37,7 +37,7 @@ public class RegroupTag extends SingleTag {
 }
 
 class GroupObject {
-    private final Object       grouper;
+    private final Object grouper;
 
     private final List<Object> list;
 
@@ -60,24 +60,25 @@ class GroupObject {
 }
 
 class RegroupNode extends Node {
-    private static final String               AS      = "as";
+    private static final String AS = "as";
 
-    private static final String               BY      = "by";
+    private static final String BY = "by";
 
     private static final Map<String, Integer> MAPOFOP = new HashMap<String, Integer>();
+
     static {
         MAPOFOP.put(AS, 1);
         MAPOFOP.put(BY, 2);
     }
 
-    private final String                      field;
+    private final String field;
 
-    private final IExprNode                   groupNode;
+    private final IExprNode groupNode;
 
-    private final String                      varName;
+    private final String varName;
 
     public RegroupNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                       final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode exprNode = (new ExprParser(content))
                 .parse(new JustParserOperator(MAPOFOP));

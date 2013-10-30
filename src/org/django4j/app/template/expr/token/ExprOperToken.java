@@ -5,7 +5,7 @@ import org.django4j.app.template.expr.IExprOperator;
 import org.django4j.app.template.expr.ast.ExprOperNode;
 
 public class ExprOperToken extends ExprToken {
-    private static final long   serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
     private final IExprOperator operator;
 

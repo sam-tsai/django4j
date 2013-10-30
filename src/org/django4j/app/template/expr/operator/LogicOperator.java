@@ -1,19 +1,20 @@
 package org.django4j.app.template.expr.operator;
 
+import org.django4j.app.template.ITemplateEngine;
+import org.django4j.app.template.RenderContext;
+import org.django4j.app.template.expr.IExprNode;
+import org.django4j.app.template.utils.reflect.ObjectUtils;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.django4j.app.template.ITemplateEngine;
-import org.django4j.app.template.RenderContext;
-import org.django4j.app.template.expr.IExprNode;
-import org.django4j.app.template.utils.reflect.ObjectUtils;
-
 public class LogicOperator extends AbstractOperator {
 
     private static final Map<String, Integer> MAPOFOP = new HashMap<String, Integer>();
+
     static {
         MAPOFOP.put("or", 1);
         MAPOFOP.put("and", 2);
@@ -44,8 +45,8 @@ public class LogicOperator extends AbstractOperator {
 
     @Override
     public Object value(final ITemplateEngine tEngine,
-            final String operatorStr, final RenderContext ct,
-            final IExprNode aNode, final IExprNode zNode) throws Exception {
+                        final String operatorStr, final RenderContext ct,
+                        final IExprNode aNode, final IExprNode zNode) throws Exception {
         if (operatorStr.equals("==")) {
             return isEqual(tEngine, ct, aNode, zNode);
         } else if (operatorStr.equals("!=")) {
@@ -86,7 +87,7 @@ public class LogicOperator extends AbstractOperator {
 
     @SuppressWarnings("unchecked")
     private int compare(final ITemplateEngine tEngine, final RenderContext ct,
-            final IExprNode aNode, final IExprNode zNode) throws Exception {
+                        final IExprNode aNode, final IExprNode zNode) throws Exception {
         if (aNode == null || zNode == null) {
             throw new Exception("!= operation error,this need two oprater");
         }
@@ -140,7 +141,7 @@ public class LogicOperator extends AbstractOperator {
     }
 
     private boolean isEqual(final ITemplateEngine tEngine,
-            final RenderContext ct, final IExprNode aNode, final IExprNode zNode)
+                            final RenderContext ct, final IExprNode aNode, final IExprNode zNode)
             throws Exception {
         if (aNode == null || zNode == null) {
             throw new Exception("== operation error,this need two oprater");

@@ -1,10 +1,10 @@
 package org.django4j.app.template.expr;
 
-import java.util.List;
-
 import org.django4j.app.template.expr.ast.ExprArrayNode;
 import org.django4j.app.template.expr.token.ExprFilterToken;
 import org.django4j.app.template.expr.token.ExprToken;
+
+import java.util.List;
 
 public class ExprParser {
 
@@ -29,7 +29,7 @@ public class ExprParser {
     }
 
     private static IExprNode parse(final List<ExprToken> tokenList,
-            final IExprOperator operator) throws Exception {
+                                   final IExprOperator operator) throws Exception {
         final int size = tokenList.size();
         if (size == 1) {
             final IExprNode node = tokenList.get(0).getNode();

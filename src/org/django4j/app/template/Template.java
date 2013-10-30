@@ -1,15 +1,15 @@
 package org.django4j.app.template;
 
-import java.io.File;
-import java.net.URL;
-
 import org.django4j.app.template.ast.RootNode;
 import org.django4j.util.DjangoUtils;
 
-public class Template {
-    private final File            file;
+import java.io.File;
+import java.net.URL;
 
-    private final RootNode        root;
+public class Template {
+    private final File file;
+
+    private final RootNode root;
     private final ITemplateEngine tEngine;
 
     public Template(final File file, final ITemplateEngine tEngine)

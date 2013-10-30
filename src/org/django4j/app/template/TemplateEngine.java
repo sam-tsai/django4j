@@ -1,23 +1,23 @@
 package org.django4j.app.template;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.django4j.DjangoConst;
 import org.django4j.app.handleroute.defaulthandle.ReflectUtils;
 import org.django4j.app.template.cache.TemplateCache;
 import org.django4j.context.AppContext;
 import org.django4j.context.Context;
 
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+
 public class TemplateEngine implements ITemplateEngine {
-    private static final String[]               DEFAULT_FILTER_PACKAGE = new String[] { "org.django4j.app.template.filter" };
-    private static final String[]               DEFAULT_TAG_PACKAGE    = new String[] { "org.django4j.app.template.tag" };
-    private final TemplateCache<File, Template> _cache                 = new TemplateCache<File, Template>();
-    private String                              charSet                = "utf-8";
-    private final Map<String, IFilter>          filterMap              = new HashMap<String, IFilter>();
-    private final Map<String, ITag>             tagMap                 = new HashMap<String, ITag>();
-    private final Map<String, File>             tmplFileMap            = new HashMap<String, File>();
+    private static final String[] DEFAULT_FILTER_PACKAGE = new String[]{"org.django4j.app.template.filter"};
+    private static final String[] DEFAULT_TAG_PACKAGE = new String[]{"org.django4j.app.template.tag"};
+    private final TemplateCache<File, Template> _cache = new TemplateCache<File, Template>();
+    private String charSet = "utf-8";
+    private final Map<String, IFilter> filterMap = new HashMap<String, IFilter>();
+    private final Map<String, ITag> tagMap = new HashMap<String, ITag>();
+    private final Map<String, File> tmplFileMap = new HashMap<String, File>();
 
     public TemplateEngine() {
 

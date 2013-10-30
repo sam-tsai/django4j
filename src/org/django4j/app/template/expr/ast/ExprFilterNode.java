@@ -12,7 +12,7 @@ public class ExprFilterNode extends ExprCalculateNode {
     }
 
     public Object value(final ITemplateEngine tEngine,
-            final IExprNode exprNode, final RenderContext ct) throws Exception {
+                        final IExprNode exprNode, final RenderContext ct) throws Exception {
         final IFilter filter = tEngine.getFilter(getContent());
         if (exprNode == null) {
             throw new Exception("filter operation error,this need a operand");

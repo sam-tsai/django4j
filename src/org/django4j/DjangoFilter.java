@@ -1,22 +1,16 @@
 package org.django4j;
 
-import java.io.IOException;
-
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.http.HttpServletRequest;
-
-import org.django4j.api.DjangoRequest;
+import org.django4j.api.http.DjangoRequest;
 import org.django4j.context.Context;
+
+import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 
 /**
  * This is the servlet filter implements of Django4j. It is configer in the
  * web.xml like this
- * 
+ * <p/>
  * <pre>
  *  <filter>
  *     <filter-name>DjangoFilter</filter-name>
@@ -25,16 +19,15 @@ import org.django4j.context.Context;
  *        <param-name>app_page_package</param-name>
  *        <param-value>org.django4j.example.hello</param-value>
  *     </init-param>
- * 
+ *
  * </filter>
  *  <filter-mapping>
  *     <filter-name>DjangoFilter</filter-name>
  *     <url-pattern>/*</url-pattern>
  *  </filter-mapping>
  * </pre>
- * 
+ *
  * @author cxzh9888 at hotmail.com
- * 
  */
 public class DjangoFilter implements Filter {
     private final DjangoEngine engine = new DjangoEngine();
@@ -46,7 +39,7 @@ public class DjangoFilter implements Filter {
 
     @Override
     public void doFilter(final ServletRequest servletRequest,
-            final ServletResponse servletResponse, final FilterChain filterChain)
+                         final ServletResponse servletResponse, final FilterChain filterChain)
             throws IOException, ServletException {
         Context.local();
         engine.doAction(new DjangoRequest((HttpServletRequest) servletRequest),

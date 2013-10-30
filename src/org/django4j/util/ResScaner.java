@@ -1,36 +1,24 @@
 package org.django4j.util;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.LineNumberReader;
-import java.io.Reader;
+import java.io.*;
 import java.net.JarURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.regex.Pattern;
 
 public class ResScaner {
-    private static final Pattern CLASS_NAME_PATTERN  = Pattern
-                                                             .compile(
-                                                                     "^\\p{javaJavaIdentifierStart}[\\p{javaJavaIdentifierPart}&&[^\\$]]*\\.class$",
-                                                                     2);
+    private static final Pattern CLASS_NAME_PATTERN = Pattern
+            .compile(
+                    "^\\p{javaJavaIdentifierStart}[\\p{javaJavaIdentifierPart}&&[^\\$]]*\\.class$",
+                    2);
 
     private static final Pattern FOLDER_NAME_PATTERN = Pattern
-                                                             .compile(
-                                                                     "^\\p{javaJavaIdentifierStart}[\\p{javaJavaIdentifierPart}]*$",
-                                                                     2);
+            .compile(
+                    "^\\p{javaJavaIdentifierStart}[\\p{javaJavaIdentifierPart}]*$",
+                    2);
 
     public static String getClassName(final String resName) {
         return resName.substring(6);
@@ -41,7 +29,7 @@ public class ResScaner {
     }
 
     public static String getRelatePath(final String resName,
-            final String packageName) {
+                                       final String packageName) {
         return resName.substring(packageName.length());
     }
 
@@ -54,7 +42,7 @@ public class ResScaner {
     }
 
     public static Collection<String> scanPackage(final String packageName) {
-        return scanPackage(new String[] { packageName });
+        return scanPackage(new String[]{packageName});
     }
 
     public static Collection<String> scanPackage(final String[] packageNames) {
@@ -65,7 +53,7 @@ public class ResScaner {
             packageNameList.add(packagePath);
         }
         try {
-            return scanPath(packageNameList.toArray(new String[] {}));
+            return scanPath(packageNameList.toArray(new String[]{}));
         } catch (final IOException ex) {
             throw new RuntimeException(ex);
         }
@@ -102,7 +90,7 @@ public class ResScaner {
     private static boolean isClassName(final String fileName) {
         return ((fileName.endsWith(".class"))
                 && (!(fileName.equals("package-info.class"))) && (!(fileName
-                    .contains("$"))));
+                .contains("$"))));
     }
 
     private static boolean isHTMLName(final String fileName) {
@@ -110,7 +98,7 @@ public class ResScaner {
     }
 
     private static void scanDir(final String packageName, final File dir,
-            final Collection<String> componentClassNames) {
+                                final Collection<String> componentClassNames) {
         if ((!(dir.exists())) || (!(dir.isDirectory()))) {
             return;
         }
@@ -123,7 +111,7 @@ public class ResScaner {
                     final String className = packageName
                             + "."
                             + fileName.substring(0, fileName.length()
-                                    - ".class".length());
+                            - ".class".length());
                     componentClassNames.add("CLASS:" + className);
                 } else if ((isHTMLName(fileName))) {
                     componentClassNames.add("HTML:"
@@ -134,8 +122,8 @@ public class ResScaner {
     }
 
     private static void scanDirStream(final String packagePath,
-            final URL packageURL, final Collection<String> componentClassNames,
-            final List<Queued> queue) throws IOException {
+                                      final URL packageURL, final Collection<String> componentClassNames,
+                                      final List<Queued> queue) throws IOException {
         InputStream is;
         try {
             is = new BufferedInputStream(packageURL.openStream());
@@ -195,7 +183,7 @@ public class ResScaner {
     }
 
     private static void scanJarFile(final String packagePath,
-            final Collection<String> result, final JarFile jarFile) {
+                                    final Collection<String> result, final JarFile jarFile) {
         final Enumeration<JarEntry> e = jarFile.entries();
         while (e.hasMoreElements()) {
             final String name = (e.nextElement()).getName();
@@ -208,14 +196,14 @@ public class ResScaner {
                 final String className = name.substring(0, lastSlashx + 1)
                         .replace('/', '.')
                         + fileName.substring(0,
-                                fileName.length() - ".class".length());
+                        fileName.length() - ".class".length());
                 result.add(className);
             }
         }
     }
 
     private static void scanURL(final String parentPath,
-            final Collection<String> componentClassNames, final URL url)
+                                final Collection<String> componentClassNames, final URL url)
             throws IOException {
         final URLConnection connection = url.openConnection();
         JarFile jarFile;
@@ -262,7 +250,7 @@ public class ResScaner {
 class Queued {
     private final String packagePath;
 
-    private final URL    packageURL;
+    private final URL packageURL;
 
     public Queued(final URL thePackageURL, final String thePackagePath) {
         this.packageURL = thePackageURL;

@@ -1,8 +1,8 @@
 package org.django4j.app.template;
 
-import java.io.File;
-
 import org.django4j.app.IDjangoApp;
+
+import java.io.File;
 
 public interface ITemplateEngine extends IDjangoApp {
 

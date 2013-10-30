@@ -20,7 +20,7 @@ public class SpaceLessTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new SpaceLessNode(rootNode, parentNode, content);
     }
@@ -28,7 +28,7 @@ public class SpaceLessTag extends WithEndTag {
 
 class SpaceLessNode extends Node {
     public SpaceLessNode(final RootNode rootNode, final Node parentNode,
-            final String content) {
+                         final String content) {
         super(rootNode, parentNode, content);
     }
 

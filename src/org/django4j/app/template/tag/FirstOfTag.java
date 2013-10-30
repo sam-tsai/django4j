@@ -20,7 +20,7 @@ public class FirstOfTag extends SingleTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new FirstOfNode(rootNode, parentNode, content);
     }
@@ -31,7 +31,7 @@ class FirstOfNode extends Node {
     private final ExprArrayNode ean;
 
     public FirstOfNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                       final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode en = (new ExprParser(content)).parse();
         if (!(en instanceof ExprArrayNode)) {

@@ -1,9 +1,9 @@
 package org.django4j.context;
 
-import java.util.Map;
-
 import org.django4j.api.IDictionary;
 import org.django4j.api.IParentDictionary;
+
+import java.util.Map;
 
 public class ParentDictionary<V> extends Dictionary<V> implements
         IParentDictionary<V> {
@@ -24,7 +24,7 @@ public class ParentDictionary<V> extends Dictionary<V> implements
     }
 
     public ParentDictionary(IDictionary<V> parent, boolean isSorted,
-            Map<String, V> theMap) {
+                            Map<String, V> theMap) {
         super(isSorted, theMap);
         this.parent = parent;
     }
@@ -57,7 +57,7 @@ public class ParentDictionary<V> extends Dictionary<V> implements
             return (E) super.get(key);
         }
         if (parent != null) {
-            return parent.get(key);
+            return (E)parent.get(key);
         }
         return null;
     }

@@ -1,14 +1,14 @@
 package org.django4j.app.template.ast;
 
-import java.io.File;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
+
+import java.io.File;
 
 public class RootNode extends Node {
     private RootNode parentRootNode = null;
 
-    private File     templeteFile   = null;
+    private File templeteFile = null;
 
     public RootNode() {
         super(null, null, "");

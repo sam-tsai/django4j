@@ -1,14 +1,15 @@
 package org.django4j.app.template.expr;
 
+import org.django4j.app.template.expr.token.ExprToken;
+
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.django4j.app.template.expr.token.ExprToken;
-
 public class ExprTokenizer {
     private static final Set<Character> OPERATOR_CHAR = new HashSet<Character>();
+
     static {
         OPERATOR_CHAR.add('+');
         OPERATOR_CHAR.add('-');
@@ -24,17 +25,17 @@ public class ExprTokenizer {
         OPERATOR_CHAR.add('(');
     }
 
-    private int                         curPos        = 0;
+    private int curPos = 0;
 
-    private char                        curqoute      = '\'';
+    private char curqoute = '\'';
 
-    private final String                is;
+    private final String is;
 
-    private final int                   length;
+    private final int length;
 
-    private final IExprOperator         operator;
+    private final IExprOperator operator;
 
-    private int                         tokenStart    = 0;
+    private int tokenStart = 0;
 
     public ExprTokenizer(final String inputstream, final IExprOperator operator) {
         this.is = inputstream;
@@ -80,7 +81,7 @@ public class ExprTokenizer {
     }
 
     private void newToken(final List<ExprToken> lsToken, final int kind,
-            final int start, final int end) {
+                          final int start, final int end) {
         if (end <= start) {
             return;
         }

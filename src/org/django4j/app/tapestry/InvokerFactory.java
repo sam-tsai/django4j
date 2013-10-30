@@ -1,9 +1,9 @@
 package org.django4j.app.tapestry;
 
+import org.django4j.api.http.IRequest;
+
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-
-import org.django4j.api.IRequest;
 
 public class InvokerFactory {
 
@@ -11,7 +11,7 @@ public class InvokerFactory {
      * @param args
      */
     public static void create(TaperstryURLMatcher urlMatcher, String className,
-            String[] viewNamePrefixs) {
+                              String[] viewNamePrefixs) {
         try {
             final Class<?> pageClass = Class.forName(className);
             if (pageClass.isInterface())
@@ -50,7 +50,7 @@ public class InvokerFactory {
                     int argCount = paramTypes.length;
                     HandleInvoker hi = new HandleInvoker(method,
                             hasRequestParam, hasRequestParam ? argCount - 1
-                                    : argCount);
+                            : argCount);
                     for (String viewNamePrefix : viewNamePrefixs) {
                         String path = viewNamePrefix + "/" + mName;
                         urlMatcher.addInvoker(path, hi);

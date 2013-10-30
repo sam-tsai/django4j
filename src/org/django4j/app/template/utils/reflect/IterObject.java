@@ -40,9 +40,9 @@ public class IterObject {
 class ArrayIter implements Iterator<Object> {
     private final Object array;
 
-    private int          index = 0;
+    private int index = 0;
 
-    private final int    len;
+    private final int len;
 
     public ArrayIter(final Object obj) {
         if (obj == null || !(obj.getClass().isArray())) {

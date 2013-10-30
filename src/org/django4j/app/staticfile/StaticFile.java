@@ -10,8 +10,8 @@ public class StaticFile implements IDjangoApp {
 
     @Override
     public String[] dependApps() {
-        return new String[] { DjangoConst.APP_NAME_ROUTER,
-                DjangoConst.APP_NAME_TEMPLATE };
+        return new String[]{DjangoConst.APP_NAME_ROUTER,
+                DjangoConst.APP_NAME_TEMPLATE};
     }
 
     @Override

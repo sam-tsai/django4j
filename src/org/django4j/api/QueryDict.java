@@ -3,7 +3,7 @@ package org.django4j.api;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-public class QueryDict extends AppendDictionary<String> {
+public class QueryDict extends AppendableDict<String> {
     public QueryDict() {
         super(true);
     }

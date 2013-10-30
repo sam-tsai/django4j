@@ -26,7 +26,7 @@ public class BlockTag implements ITag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content) {
+                           final RootNode rootNode, final Node parentNode, final String content) {
         return new BlockNode(rootNode, parentNode, content);
     }
 
@@ -36,7 +36,7 @@ class BlockNode extends Node {
     private final String blockID;
 
     public BlockNode(final RootNode rootNode, final Node parentNode,
-            final String content) {
+                     final String content) {
         super(rootNode, parentNode, content);
         blockID = TemplateConst.$BLOCK_PREX + content;
     }

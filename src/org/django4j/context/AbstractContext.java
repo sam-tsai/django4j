@@ -5,7 +5,7 @@ import java.util.Map;
 
 public abstract class AbstractContext<T extends Object> {
 
-    private final Map<String, T>     _map = new HashMap<String, T>(5);
+    private final Map<String, T> _map = new HashMap<String, T>(5);
     private final AbstractContext<T> _parent;
 
     public AbstractContext() {
@@ -17,7 +17,7 @@ public abstract class AbstractContext<T extends Object> {
     }
 
     public AbstractContext(final AbstractContext<T> parent,
-            final Map<String, T> map) {
+                           final Map<String, T> map) {
         _parent = parent;
         if (map != null) {
             _map.putAll(map);
@@ -64,7 +64,7 @@ public abstract class AbstractContext<T extends Object> {
             return (E) _map.get(varName);
         }
         if (_parent != null) {
-            return _parent.tryGet(varName);
+            return (E)_parent.tryGet(varName);
         }
         return null;
     }

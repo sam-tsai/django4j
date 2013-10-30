@@ -1,15 +1,15 @@
 package org.django4j.app.template.utils.reflect;
 
+import org.django4j.app.template.IVariable;
+import org.django4j.app.template.RenderContext;
+import org.django4j.app.template.utils.StringUtils;
+
 import java.lang.reflect.Array;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
-
-import org.django4j.app.template.IVariable;
-import org.django4j.app.template.RenderContext;
-import org.django4j.app.template.utils.StringUtils;
 
 public class DotExpr {
     public static Object getDotValue(final Object obj, final String dotString)
@@ -30,8 +30,7 @@ public class DotExpr {
         }
         Object obj = ct.get(dotStringList.get(0));
 
-        if(obj ==null)
-        {
+        if (obj == null) {
             final boolean isDigitalString = StringUtils.isDigitalString(dotStringList.get(0));
             int digital = 0;
             if (isDigitalString) {
@@ -40,7 +39,7 @@ public class DotExpr {
             return digital;
         }
         if (size > 1) {
-            obj = getDotValue(obj, dotStringList.subList(1, size ));
+            obj = getDotValue(obj, dotStringList.subList(1, size));
         }
         if (obj instanceof IVariable) {
             final IVariable variObj = (IVariable) obj;
@@ -50,7 +49,7 @@ public class DotExpr {
     }
 
     private static Object getDotValue(final Object obj,
-            final List<String> dotStringList) throws IllegalArgumentException,
+                                      final List<String> dotStringList) throws IllegalArgumentException,
             IllegalAccessException, InvocationTargetException {
         Object curObj = obj;
         for (final String _dotString_ : dotStringList) {

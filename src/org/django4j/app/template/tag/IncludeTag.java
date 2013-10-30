@@ -1,10 +1,5 @@
 package org.django4j.app.template.tag;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Map.Entry;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.app.template.Template;
@@ -21,6 +16,11 @@ import org.django4j.app.template.expr.ast.ExprVariableNode;
 import org.django4j.app.template.expr.operator.JustParserOperator;
 import org.django4j.app.template.tag.abstract_.SingleTag;
 
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
 public class IncludeTag extends SingleTag {
 
     @Override
@@ -30,7 +30,7 @@ public class IncludeTag extends SingleTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new IncludeNode(rootNode, parentNode, content);
     }
@@ -38,22 +38,23 @@ public class IncludeTag extends SingleTag {
 }
 
 class IncludeNode extends Node {
-    private static final Map<String, Integer> MAP_OP_INCLUDE   = new HashMap<String, Integer>();
-    private static final String               ONLY             = "only";
-    private static final String               WITH             = "with";
+    private static final Map<String, Integer> MAP_OP_INCLUDE = new HashMap<String, Integer>();
+    private static final String ONLY = "only";
+    private static final String WITH = "with";
+
     static {
         MAP_OP_INCLUDE.put(WITH, 1);
         MAP_OP_INCLUDE.put(ONLY, 2);
     }
 
-    private IExprNode                         fileNameExprNode = null;
+    private IExprNode fileNameExprNode = null;
 
-    private boolean                           isOnly           = false;
+    private boolean isOnly = false;
 
-    private final Map<String, IExprNode>      paramContext     = new HashMap<String, IExprNode>();
+    private final Map<String, IExprNode> paramContext = new HashMap<String, IExprNode>();
 
     public IncludeNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                       final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode exprNode = new ExprParser(content)
                 .parse(new JustParserOperator(MAP_OP_INCLUDE));

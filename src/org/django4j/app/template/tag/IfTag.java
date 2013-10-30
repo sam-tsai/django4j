@@ -24,7 +24,7 @@ public class IfTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new IfNode(rootNode, parentNode, content);
     }
@@ -35,7 +35,7 @@ class IfNode extends Node {
     private IExprNode conExpr = null;
 
     public IfNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                  final String content) throws Exception {
         super(rootNode, parentNode, content);
         conExpr = (new ExprParser(content)).parse(new LogicOperator());
     }

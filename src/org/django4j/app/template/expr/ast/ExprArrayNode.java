@@ -1,19 +1,19 @@
 package org.django4j.app.template.expr.ast;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.app.template.expr.IExprNode;
 import org.django4j.app.template.expr.ast.abstract_.ExprValueNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ExprArrayNode extends ExprValueNode {
-    private int                   index    = 0;
+    private int index = 0;
 
     private final List<IExprNode> nodeList = new ArrayList<IExprNode>();
 
-    private int                   size     = 0;
+    private int size = 0;
 
     public ExprArrayNode() {
         super("");

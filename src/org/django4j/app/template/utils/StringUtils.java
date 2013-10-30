@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class StringUtils {
     public static String convertString(final String str,
-            final Map<Character, String> trasnMap) {
+                                       final Map<Character, String> trasnMap) {
         final StringBuilder sb = new StringBuilder();
         for (final char c : str.toCharArray()) {
             if (trasnMap.containsKey(c)) {
@@ -39,7 +39,7 @@ public class StringUtils {
     }
 
     public static List<String> splitString2List(final String content,
-            final String splitReg) {
+                                                final String splitReg) {
         final String[] contentSplit = content.split(splitReg);
         final List<String> dotStringList = new ArrayList<String>();
         for (final String _context_ : contentSplit) {

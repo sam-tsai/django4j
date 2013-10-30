@@ -1,9 +1,9 @@
 package org.django4j.app.template.cache;
 
+import org.django4j.cache.ObjectCache;
+
 import java.lang.ref.SoftReference;
 import java.util.HashMap;
-
-import org.django4j.cache.ObjectCache;
 
 public class TemplateCache<File, Template> implements
         ObjectCache<File, Template> {

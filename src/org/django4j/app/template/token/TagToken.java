@@ -10,14 +10,14 @@ import org.django4j.app.template.ast.RootNode;
 public final class TagToken extends Token {
     private static final long serialVersionUID = 1L;
 
-    private ITag              tag              = null;
+    private ITag tag = null;
 
-    private final String      tagContent;
+    private final String tagContent;
 
-    private final String      tagName;
+    private final String tagName;
 
     public TagToken(final int tokenKind, int linenum, int colnum,
-            final String content) {
+                    final String content) {
         super(tokenKind, linenum, colnum, content);
         final String[] content_split = content.trim().split(" ");
         tagName = content_split[0];
@@ -26,7 +26,7 @@ public final class TagToken extends Token {
 
     @Override
     public Node getNode(final ITemplateEngine tEngine, final RootNode rootNode,
-            final Node parentNode) throws Exception {
+                        final Node parentNode) throws Exception {
         tag = tEngine.getTag(tagName);
         if (tag == null) {
             return new RawNode(rootNode, parentNode, getContent());
@@ -41,7 +41,7 @@ public final class TagToken extends Token {
 
     @Override
     public void parseSubNode(final ITemplateEngine tEngine,
-            final RootNode root, final Node parent, final Parser parser)
+                             final RootNode root, final Node parent, final Parser parser)
             throws Exception {
         if (tag == null) {
             return;

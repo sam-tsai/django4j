@@ -23,7 +23,7 @@ public class IfEqualTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new IfEqualNode(rootNode, parentNode, content);
     }
@@ -33,7 +33,7 @@ class IfEqualNode extends Node {
     private final ExprArrayNode ean;
 
     public IfEqualNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                       final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode en = (new ExprParser(content)).parse();
         if (!(en instanceof ExprArrayNode)) {

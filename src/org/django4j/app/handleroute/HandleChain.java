@@ -1,21 +1,20 @@
 package org.django4j.app.handleroute;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
-import javax.servlet.ServletResponse;
-
 import org.django4j.DjangoConst;
-import org.django4j.api.IRequest;
-import org.django4j.api.IResponse;
+import org.django4j.api.http.IRequest;
+import org.django4j.api.http.IResponse;
 import org.django4j.app.template.TemplateConst;
 import org.django4j.context.AppContext;
 import org.django4j.context.Context;
 
+import javax.servlet.ServletResponse;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
 public final class HandleChain implements IHandle {
-    private IHandle             exceptionHandle = new ExceptionHandle();
-    private final List<IHandle> handles         = new ArrayList<IHandle>();
+    private IHandle exceptionHandle = new ExceptionHandle();
+    private final List<IHandle> handles = new ArrayList<IHandle>();
 
     public HandleChain addHandel(final IHandle handle) {
         handles.add(handle);
@@ -24,7 +23,7 @@ public final class HandleChain implements IHandle {
 
     @Override
     public void exec(IRequest request, IResponse response,
-            final AppContext appContext, final Context cfgContext) {
+                     final AppContext appContext, final Context cfgContext) {
         final Iterator<IHandle> iter = handles.iterator();
         try {
             while (iter.hasNext()) {
@@ -48,7 +47,7 @@ public final class HandleChain implements IHandle {
 class ExceptionHandle implements IHandle {
     @Override
     public void exec(IRequest request, IResponse response,
-            final AppContext appContext, final Context cfgContext)
+                     final AppContext appContext, final Context cfgContext)
             throws Exception {
         final Throwable throwable = cfgContext.get(DjangoConst.$PRE_RESULT);
         final ServletResponse servletResponse = Context.local().get(

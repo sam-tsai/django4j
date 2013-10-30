@@ -16,12 +16,12 @@ public class EmptyTag extends BranchTag {
 
     @Override
     public String[] getSkipTokens() {
-        return new String[] { "endfor" };
+        return new String[]{"endfor"};
     }
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new EmptyNode(tEngine, rootNode, parentNode, content);
     }
@@ -30,7 +30,7 @@ public class EmptyTag extends BranchTag {
 class EmptyNode extends FloderNode implements IBranchNode {
 
     public EmptyNode(final ITemplateEngine tEngine, final RootNode rootNode,
-            final Node parentNode, final String content) {
+                     final Node parentNode, final String content) {
         super(rootNode, parentNode, content);
     }
 }

@@ -1,8 +1,5 @@
 package org.django4j.app.template.ast;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.app.template.TemplateConst;
@@ -11,8 +8,12 @@ import org.django4j.app.template.expr.IExprNode;
 import org.django4j.app.template.utils.StringUtils;
 import org.django4j.app.template.utils.reflect.ObjectUtils;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class VariableNode extends Node {
     private static final Map<Character, String> ESCAPEMAP = new HashMap<Character, String>();
+
     static {
         ESCAPEMAP.put('&', "&amp");
         ESCAPEMAP.put('<', "&lt");
@@ -20,10 +21,11 @@ public class VariableNode extends Node {
         ESCAPEMAP.put('\'', "&#39");
         ESCAPEMAP.put('"', "&quot");
     }
-    private IExprNode                           exprNode  = null;
+
+    private IExprNode exprNode = null;
 
     public VariableNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                        final String content) throws Exception {
         super(rootNode, parentNode, content);
         exprNode = (new ExprParser(content)).parse();
     }

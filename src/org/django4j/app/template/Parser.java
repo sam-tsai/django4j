@@ -1,16 +1,16 @@
 package org.django4j.app.template;
 
-import java.io.File;
-import java.util.List;
-
 import org.django4j.app.template.ast.RootNode;
 import org.django4j.app.template.token.Token;
 import org.django4j.util.DjangoUtils;
 
+import java.io.File;
+import java.util.List;
+
 public class Parser {
-    private final File  file;
-    private int         index = 0;
-    private int         len;
+    private final File file;
+    private int index = 0;
+    private int len;
     private List<Token> tokenList;
 
     public Parser(final File _file) {

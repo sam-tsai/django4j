@@ -9,13 +9,13 @@ public class HtmlToken extends EmptyNameToken {
     private static final long serialVersionUID = 1L;
 
     public HtmlToken(final int tokenKind, int linenum, int colnum,
-            final String content) {
+                     final String content) {
         super(tokenKind, linenum, colnum, content);
     }
 
     @Override
     public Node getNode(final ITemplateEngine tEngine, final RootNode rootNode,
-            final Node parentNode) {
+                        final Node parentNode) {
         return new RawNode(rootNode, parentNode, getContent());
     }
 }

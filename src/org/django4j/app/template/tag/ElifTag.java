@@ -15,12 +15,12 @@ public class ElifTag extends BranchTag {
 
     @Override
     public String[] getSkipTokens() {
-        return new String[] { "endif" };
+        return new String[]{"endif"};
     }
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new ElifNode(rootNode, parentNode, content);
     }
@@ -28,7 +28,7 @@ public class ElifTag extends BranchTag {
 
 class ElifNode extends IfNode implements IBranchNode {
     public ElifNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                    final String content) throws Exception {
         super(rootNode, parentNode, content);
     }
 }

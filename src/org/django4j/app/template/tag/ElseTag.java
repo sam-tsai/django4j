@@ -16,13 +16,13 @@ public class ElseTag extends BranchTag {
 
     @Override
     public String[] getSkipTokens() {
-        return new String[] { "endif", "endifequal", "endifchanged",
-                "endifnotequal" };
+        return new String[]{"endif", "endifequal", "endifchanged",
+                "endifnotequal"};
     }
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content) {
+                           final RootNode rootNode, final Node parentNode, final String content) {
         return new ElseNode(tEngine, rootNode, parentNode, content);
     }
 }
@@ -30,7 +30,7 @@ public class ElseTag extends BranchTag {
 class ElseNode extends FloderNode implements IBranchNode {
 
     public ElseNode(final ITemplateEngine tEngine, final RootNode rootNode,
-            final Node parentNode, final String content) {
+                    final Node parentNode, final String content) {
         super(rootNode, parentNode, content);
     }
 }

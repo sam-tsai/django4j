@@ -5,7 +5,7 @@ import org.django4j.app.template.RenderContext;
 
 public class CommentNode extends Node {
     public CommentNode(final RootNode rootNode, final Node parentNode,
-            final String content) {
+                       final String content) {
         super(rootNode, parentNode, content);
     }
 

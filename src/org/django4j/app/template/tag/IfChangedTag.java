@@ -23,7 +23,7 @@ public class IfChangedTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new IfChangedNode(rootNode, parentNode, content);
     }
@@ -32,12 +32,12 @@ public class IfChangedTag extends WithEndTag {
 class IfChangedNode extends Node {
     private final IExprNode exprNode;
 
-    private final boolean   hasParam;
+    private final boolean hasParam;
 
-    private Object          lastObj = null;
+    private Object lastObj = null;
 
     public IfChangedNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                         final String content) throws Exception {
         super(rootNode, parentNode, content);
 
         if (content == null || content.isEmpty()) {

@@ -1,8 +1,5 @@
 package org.django4j.app.template.tag;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.app.template.ast.Node;
@@ -14,6 +11,9 @@ import org.django4j.app.template.expr.ast.ExprStringNode;
 import org.django4j.app.template.expr.operator.JustParserOperator;
 import org.django4j.app.template.tag.abstract_.SingleTag;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class NowTag extends SingleTag {
 
     @Override
@@ -23,7 +23,7 @@ public class NowTag extends SingleTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new NowNode(rootNode, parentNode, content);
     }
@@ -31,12 +31,12 @@ public class NowTag extends SingleTag {
 }
 
 class NowNode extends Node {
-    private final String           formateStr;
+    private final String formateStr;
 
     private final SimpleDateFormat sdf;
 
     public NowNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                   final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode exprNode = new ExprParser(content)
                 .parse(new JustParserOperator());
@@ -49,7 +49,7 @@ class NowNode extends Node {
 
     @Override
     public synchronized String render(final ITemplateEngine tEngine,
-            final RenderContext ct) throws Exception {
+                                      final RenderContext ct) throws Exception {
         return sdf.format(new Date());
     }
 

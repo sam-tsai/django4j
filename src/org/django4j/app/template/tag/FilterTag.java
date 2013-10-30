@@ -25,7 +25,7 @@ public class FilterTag extends WithEndTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new FilterNode(rootNode, parentNode, content);
     }
@@ -36,7 +36,7 @@ class FilterNode extends Node {
     private final ExprFilterNode exprFilterNode;
 
     public FilterNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                      final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode en = (new ExprParser("|" + content)).parse(null);
         if (!(en instanceof ExprFilterNode)) {

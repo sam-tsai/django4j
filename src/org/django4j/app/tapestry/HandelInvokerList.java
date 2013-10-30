@@ -1,9 +1,9 @@
 package org.django4j.app.tapestry;
 
+import org.django4j.api.ArrayValue;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import org.django4j.api.ArrayValue;
 
 public class HandelInvokerList extends ArrayValue<HandleInvoker> implements
         HandleInvokerContainer {

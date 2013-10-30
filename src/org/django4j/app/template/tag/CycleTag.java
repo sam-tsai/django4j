@@ -21,7 +21,7 @@ public class CycleTag extends SingleTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new CycleNode(rootNode, parentNode, content);
     }
@@ -29,20 +29,20 @@ public class CycleTag extends SingleTag {
 }
 
 class CycleNode extends Node implements IVariable {
-    private static final String AS     = "as";
+    private static final String AS = "as";
 
     private static final String SILENT = "silent";
 
     private final ExprArrayNode ean;
 
-    private int                 index  = 0;
+    private int index = 0;
 
-    private final boolean       isSilent;
+    private final boolean isSilent;
 
-    private final String        varName;
+    private final String varName;
 
     public CycleNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                     final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode en = (new ExprParser(content)).parse();
         if (!(en instanceof ExprArrayNode)) {

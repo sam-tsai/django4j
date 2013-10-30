@@ -1,9 +1,5 @@
 package org.django4j.app.template.tag;
 
-import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.app.template.Template;
@@ -16,6 +12,10 @@ import org.django4j.app.template.expr.ast.abstract_.ExprValueNode;
 import org.django4j.app.template.expr.operator.JustParserOperator;
 import org.django4j.app.template.tag.abstract_.SingleTag;
 
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
+
 public class SsiTag extends SingleTag {
     @Override
     public String getName() {
@@ -24,7 +24,7 @@ public class SsiTag extends SingleTag {
 
     @Override
     public Node parserNode(final ITemplateEngine tEngine,
-            final RootNode rootNode, final Node parentNode, final String content)
+                           final RootNode rootNode, final Node parentNode, final String content)
             throws Exception {
         return new SsiNode(rootNode, parentNode, content);
     }
@@ -32,16 +32,17 @@ public class SsiTag extends SingleTag {
 
 class SsiNode extends Node {
     private static final Map<String, Integer> MAPOFOP = new HashMap<String, Integer>();
+
     static {
         MAPOFOP.put("parsed", 1);
     }
 
-    private final IExprNode                   includeFileExprNode;
+    private final IExprNode includeFileExprNode;
 
-    private final boolean                     isParsed;
+    private final boolean isParsed;
 
     public SsiNode(final RootNode rootNode, final Node parentNode,
-            final String content) throws Exception {
+                   final String content) throws Exception {
         super(rootNode, parentNode, content);
         final IExprNode exprNode = (new ExprParser(content))
                 .parse(new JustParserOperator(MAPOFOP));

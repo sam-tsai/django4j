@@ -5,9 +5,9 @@ import org.django4j.context.AppContext;
 import org.django4j.context.Context;
 
 public interface IDjangoApp extends INameable {
-	String[] dependApps();
+    String[] dependApps();
 
-	boolean load(AppContext appContext, Context cfgContext);
+    boolean load(AppContext appContext, Context cfgContext);
 
-	boolean unload();
+    boolean unload();
 }
