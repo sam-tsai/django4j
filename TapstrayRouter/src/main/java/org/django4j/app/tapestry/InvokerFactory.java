@@ -48,7 +48,7 @@ public class InvokerFactory {
                 if (isOk) {
                     String mName = method.getName();
                     int argCount = paramTypes.length;
-                    HandleInvoker hi = new HandleInvoker(method,
+                    RouterInvoker hi = new RouterInvoker(method,
                             hasRequestParam, hasRequestParam ? argCount - 1
                             : argCount);
                     for (String viewNamePrefix : viewNamePrefixs) {

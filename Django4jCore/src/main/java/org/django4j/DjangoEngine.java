@@ -9,9 +9,9 @@ import javax.servlet.ServletResponse;
 import org.django4j.api.http.DjangoResponse;
 import org.django4j.api.http.IRequest;
 import org.django4j.app.IDjangoApp;
-import org.django4j.app.router.IHandle;
-import org.django4j.app.router.IHandleRouter;
-import org.django4j.app.router.defaulthandle.ReflectUtils;
+import org.django4j.app.router.IRouter;
+import org.django4j.app.router.IRouterApp;
+import org.django4j.util.ReflectUtils;
 import org.django4j.app.template.TemplateConst;
 import org.django4j.api.AppContext;
 import org.django4j.api.Context;
@@ -21,7 +21,7 @@ import org.django4j.util.ResScaner;
 public class DjangoEngine implements IDjangoApp {
     private final AppContext appContext = new AppContext();
     private final Context cfgContext = new Context();
-    private IHandleRouter route = null;
+    private IRouterApp route = null;
 
     public DjangoEngine() {
     }
@@ -38,7 +38,7 @@ public class DjangoEngine implements IDjangoApp {
         ct.set(TemplateConst.$REQUEST, request);
         ct.set(TemplateConst.$REPONSE, servletResponse);
         ct.set(DjangoConst.$CUR_URL, servletPath);
-        final IHandle handle = route.getHandle(request);
+        final IRouter handle = route.getRouter(request);
         try {
             handle.exec(request, new DjangoResponse(servletResponse, "utf-8"),
                     appContext, cfgContext);

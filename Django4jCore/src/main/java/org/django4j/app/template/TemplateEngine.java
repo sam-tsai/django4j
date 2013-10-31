@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.django4j.DjangoConst;
-import org.django4j.app.router.defaulthandle.ReflectUtils;
+import org.django4j.util.ReflectUtils;
 import org.django4j.app.template.cache.TemplateCache;
 import org.django4j.api.AppContext;
 import org.django4j.api.Context;

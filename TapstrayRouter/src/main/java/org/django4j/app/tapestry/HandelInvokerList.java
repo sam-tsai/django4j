@@ -5,21 +5,21 @@ import java.util.List;
 
 import org.django4j.api.ArrayValue;
 
-public class HandelInvokerList extends ArrayValue<HandleInvoker> implements
+public class HandelInvokerList extends ArrayValue<RouterInvoker> implements
         HandleInvokerContainer {
     public HandelInvokerList() {
     }
 
-    public HandelInvokerList(HandleInvoker theValue) {
+    public HandelInvokerList(RouterInvoker theValue) {
         super(theValue);
     }
 
-    private final List<HandleInvoker> list = new ArrayList<HandleInvoker>();
+    private final List<RouterInvoker> list = new ArrayList<RouterInvoker>();
 
     @Override
-    public HandleInvoker match(int argsize) {
-        HandleInvoker defhi = null;
-        for (HandleInvoker hi : list) {
+    public RouterInvoker match(int argsize) {
+        RouterInvoker defhi = null;
+        for (RouterInvoker hi : list) {
             if (hi.getArgCount() == 0) {
                 defhi = hi;
             }

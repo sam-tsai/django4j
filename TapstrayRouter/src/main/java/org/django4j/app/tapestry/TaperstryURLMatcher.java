@@ -9,14 +9,14 @@ import java.util.StringTokenizer;
 import org.django4j.api.IAppendable;
 import org.django4j.api.http.Method;
 import org.django4j.api.http.IRequest;
-import org.django4j.app.router.IHandle;
+import org.django4j.app.router.IRouter;
 import org.django4j.app.router.IURLMatcher;
 
 public class TaperstryURLMatcher implements IURLMatcher {
 	private final Map<String, TaperstryURLMatcher> m = new HashMap<String, TaperstryURLMatcher>();
-	private IAppendable<HandleInvoker> invokerContainer = null;
+	private IAppendable<RouterInvoker> invokerContainer = null;
 
-	public void addInvoker(String relatePath, HandleInvoker invoker) {
+	public void addInvoker(String relatePath, RouterInvoker invoker) {
 		if (relatePath.equals("/")) {
 			setInvoker(invoker);
 			return;
@@ -24,12 +24,12 @@ public class TaperstryURLMatcher implements IURLMatcher {
 		add(new StringTokenizer(relatePath, "/"), invoker);
 	}
 
-	private void setInvoker(HandleInvoker invoker) {
+	private void setInvoker(RouterInvoker invoker) {
 		invokerContainer = invokerContainer == null ? invoker
 				: invokerContainer.append(invoker);
 	}
 
-	private void add(StringTokenizer st, HandleInvoker invoker) {
+	private void add(StringTokenizer st, RouterInvoker invoker) {
 		if (!st.hasMoreTokens()) {
 			setInvoker(invoker);
 			return;
@@ -41,7 +41,7 @@ public class TaperstryURLMatcher implements IURLMatcher {
 		m.get(cur).add(st, invoker);
 	}
 
-	private IHandle match(IRequest request, StringBuilder stringBuilder,
+	private IRouter match(IRequest request, StringBuilder stringBuilder,
 			StringTokenizer st, Method action, int argCounts) {
 		if (!st.hasMoreTokens()) {
 			return match(argCounts);
@@ -68,7 +68,7 @@ public class TaperstryURLMatcher implements IURLMatcher {
 	}
 
 	@Override
-	public IHandle match(IRequest request) {
+	public IRouter match(IRequest request) {
 		String url = request.path();
         Method action = request.action();
 		int argCounts = 0;
@@ -86,11 +86,11 @@ public class TaperstryURLMatcher implements IURLMatcher {
 				"/"), action, argCounts);
 	}
 
-	private IHandle match(int argCounts) {
-		HandleInvoker defhi = null;
+	private IRouter match(int argCounts) {
+		RouterInvoker defhi = null;
 		if (invokerContainer == null)
 			return null;
-		for (HandleInvoker hi : invokerContainer.list()) {
+		for (RouterInvoker hi : invokerContainer.list()) {
 			if (hi.getArgCount() == 0) {
 				defhi = hi;
 			}
@@ -101,7 +101,7 @@ public class TaperstryURLMatcher implements IURLMatcher {
 		return defhi;
 	}
 
-	private IHandle match(Method action, int argCounts) {
+	private IRouter match(Method action, int argCounts) {
 		if (!m.containsKey(action.str())) {
 			return null;
 		}

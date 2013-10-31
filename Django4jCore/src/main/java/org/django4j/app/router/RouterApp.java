@@ -7,7 +7,7 @@ import org.django4j.api.http.IRequest;
 import org.django4j.api.AppContext;
 import org.django4j.api.Context;
 
-public class HandleRouter implements IHandleRouter {
+public class RouterApp implements IRouterApp {
 
 	private final TreeSet<IURLMatcher> pathHandleMap = new TreeSet<IURLMatcher>(
 			new URLMatherComparter());
@@ -18,9 +18,9 @@ public class HandleRouter implements IHandleRouter {
 	}
 
 	@Override
-	public IHandle getHandle(IRequest request) {
+	public IRouter getRouter(IRequest request) {
 		for (IURLMatcher matcher : pathHandleMap) {
-			IHandle handle = matcher.match(request);
+			IRouter handle = matcher.match(request);
 			if (handle != null) {
 				return handle;
 			}
@@ -39,7 +39,7 @@ public class HandleRouter implements IHandleRouter {
 	}
 
 	@Override
-	public void regHandle(final IURLMatcher urlMater) {
+	public void regRouter(final IURLMatcher urlMater) {
 		pathHandleMap.add(urlMater);
 	}
 

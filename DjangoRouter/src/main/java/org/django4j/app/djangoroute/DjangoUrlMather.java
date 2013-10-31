@@ -7,7 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.django4j.api.http.IRequest;
-import org.django4j.app.router.IHandle;
+import org.django4j.app.router.IRouter;
 import org.django4j.app.router.IURLMatcher;
 
 public class DjangoUrlMather implements IURLMatcher {
@@ -21,7 +21,7 @@ public class DjangoUrlMather implements IURLMatcher {
 	private List<RoutePattern> lsRouteReg = new ArrayList<RoutePattern>();
 	private DjangoHandler _handler = new DjangoHandler();
 	@Override
-	public IHandle match(IRequest request) {
+	public IRouter match(IRequest request) {
 		String path = request.path();
 		for (RoutePattern rp : lsRouteReg) {
 			Matcher m = rp.p.matcher(path);

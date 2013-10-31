@@ -10,13 +10,13 @@ import javax.servlet.ServletResponse;
 import org.django4j.DjangoConst;
 import org.django4j.api.http.IRequest;
 import org.django4j.api.http.IResponse;
-import org.django4j.app.router.IHandle;
+import org.django4j.app.router.IRouter;
 import org.django4j.app.template.TemplateConst;
 import org.django4j.api.AppContext;
 import org.django4j.api.Context;
 import org.django4j.util.DjangoUtils;
 
-public class StaticFileHandle implements IHandle {
+public class StaticFileRouter implements IRouter {
     @Override
     public void exec(IRequest request, IResponse response1,
                      final AppContext appContext, final Context cfgContext)

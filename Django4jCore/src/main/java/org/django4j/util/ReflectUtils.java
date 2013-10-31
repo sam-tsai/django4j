@@ -1,4 +1,4 @@
-package org.django4j.app.router.defaulthandle;
+package org.django4j.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

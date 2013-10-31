@@ -9,15 +9,15 @@ import org.django4j.api.SinglelValue;
 import org.django4j.api.http.IRequest;
 import org.django4j.api.http.IResponse;
 import org.django4j.api.string.AbstractString;
-import org.django4j.app.router.IHandle;
-import org.django4j.app.router.defaulthandle.ReflectUtils;
+import org.django4j.app.router.IRouter;
+import org.django4j.util.ReflectUtils;
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.app.template.RenderContext;
 import org.django4j.api.AppContext;
 import org.django4j.api.Context;
 
-public class HandleInvoker extends SinglelValue<HandleInvoker> implements
-        IHandle {
+public class RouterInvoker extends SinglelValue<RouterInvoker> implements
+        IRouter {
     private final Method invokerMethod;
     private final int argCount;
 
@@ -27,14 +27,14 @@ public class HandleInvoker extends SinglelValue<HandleInvoker> implements
 
     private final boolean hasRequest;
 
-    public HandleInvoker(Method invokerMethod, boolean hasRequest, int argCount) {
+    public RouterInvoker(Method invokerMethod, boolean hasRequest, int argCount) {
         this.invokerMethod = invokerMethod;
         this.argCount = argCount;
         this.hasRequest = hasRequest;
         append(this);
     }
 
-    public HandleInvoker match(int argsize) {
+    public RouterInvoker match(int argsize) {
         if (argCount == 0 || argCount == argsize) {
             return this;
         } else {

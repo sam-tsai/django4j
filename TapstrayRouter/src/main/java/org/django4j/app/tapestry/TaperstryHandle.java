@@ -8,7 +8,7 @@ import java.util.Set;
 
 import org.django4j.DjangoConst;
 import org.django4j.app.IDjangoApp;
-import org.django4j.app.router.IHandleRouter;
+import org.django4j.app.router.IRouterApp;
 import org.django4j.app.template.ITemplateEngine;
 import org.django4j.api.AppContext;
 import org.django4j.api.Context;
@@ -48,9 +48,9 @@ public class TaperstryHandle implements IDjangoApp {
                 .scanPackage(pagePakageName);
         final int prePackageLength = pagePakageName.length();
         TaperstryURLMatcher urlMatcher = new TaperstryURLMatcher();
-        IHandleRouter router = appContext.get(DjangoConst.APP_NAME_ROUTER);
+        IRouterApp router = appContext.get(DjangoConst.APP_NAME_ROUTER);
         if (router != null)
-            router.regHandle(urlMatcher);
+            router.regRouter(urlMatcher);
         ITemplateEngine tmplEngine = appContext
                 .get(DjangoConst.APP_NAME_TEMPLATE);
         for (final String resName : resNameList) {
