@@ -1,0 +1,1043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="958e8bf5-7784-4a22-ac7f-280588c8039a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\DjangoConst.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/DjangoConst.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\DjangoEngine.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/DjangoEngine.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\DjangoFilter.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/DjangoFilter.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\ArrayValue.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/ArrayValue.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\IAppendable.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/IAppendable.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\IDictionary.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/IDictionary.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\INameable.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/INameable.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\IParentDictionary.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/IParentDictionary.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\QueryDict.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/QueryDict.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\http\Action.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/http/Method.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\http\DjangoCookie.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/http/DjangoCookie.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\http\DjangoRequest.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/http/DjangoRequest.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\http\DjangoResponse.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/http/DjangoResponse.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\http\ICookie.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/http/ICookie.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\http\IRequest.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/http/IRequest.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\http\IResponse.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/http/IResponse.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\string\AbstractString.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/string/AbstractString.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\string\HtmlString.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/string/HtmlString.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\string\JsonString.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/string/JsonString.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\string\PlainString.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/string/PlainString.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\api\string\XmlString.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/string/XmlString.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\IDjangoApp.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/IDjangoApp.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\handleroute\HandleChain.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/router/HandleChain.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\handleroute\HandleRouter.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/router/HandleRouter.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\handleroute\IHandle.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/router/IHandle.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\handleroute\IHandleRouter.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/router/IHandleRouter.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\handleroute\IURLMatcher.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/router/IURLMatcher.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\handleroute\defaulthandle\ReflectUtils.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/router/defaulthandle/ReflectUtils.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\staticfile\StaticFile.java" afterPath="$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFile.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\staticfile\StaticFileHandle.java" afterPath="$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFileHandle.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\staticfile\StaticFileUrlMather.java" afterPath="$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFileUrlMather.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\staticfile\StaticTag.java" afterPath="$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\tapestry\HandelInvokerList.java" afterPath="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/HandelInvokerList.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\tapestry\HandleInvoker.java" afterPath="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/HandleInvoker.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\tapestry\HandleInvokerContainer.java" afterPath="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/HandleInvokerContainer.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\tapestry\InvokerFactory.java" afterPath="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/InvokerFactory.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\tapestry\TaperstryHandle.java" afterPath="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryHandle.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\tapestry\TaperstryURLMatcher.java" afterPath="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryURLMatcher.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\IFilter.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/IFilter.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ITag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ITag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ITemplateEngine.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ITemplateEngine.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\IVariable.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/IVariable.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\Parser.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/Parser.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\RenderContext.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/RenderContext.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\Template.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/Template.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\TemplateConst.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/TemplateConst.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\TemplateEngine.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/TemplateEngine.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\Tokenizer.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/Tokenizer.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ast\CommentNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ast/CommentNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ast\FloderNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ast/FloderNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ast\IBranchNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ast/IBranchNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ast\Node.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ast/Node.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ast\RawNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ast/RawNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ast\RootNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ast/RootNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\ast\VariableNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/ast/VariableNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\cache\TemplateCache.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/cache/TemplateCache.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\exception\ExcutueException.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/exception/ExcutueException.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\exception\ParserException.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/exception/ParserException.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ExprParser.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ExprParser.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ExprTokenizer.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ExprTokenizer.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\IExprNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/IExprNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\IExprOperator.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/IExprOperator.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\ExprArrayNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/ExprArrayNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\ExprFilterNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/ExprFilterNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\ExprOperNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/ExprOperNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\ExprStringNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/ExprStringNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\ExprVariableNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/ExprVariableNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\abstract_\ExprAbstractNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/abstract_/ExprAbstractNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\abstract_\ExprCalculateNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/abstract_/ExprCalculateNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\ast\abstract_\ExprValueNode.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/ast/abstract_/ExprValueNode.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\operator\AbstractOperator.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/operator/AbstractOperator.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\operator\JustParserOperator.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/operator/JustParserOperator.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\operator\LogicOperator.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/operator/LogicOperator.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\token\ExprFilterParamToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/token/ExprFilterParamToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\token\ExprFilterToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/token/ExprFilterToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\token\ExprOperToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/token/ExprOperToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\token\ExprStringToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/token/ExprStringToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\token\ExprToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/token/ExprToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\expr\token\ExprVariableToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/expr/token/ExprVariableToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\filter\LengthFilter.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/filter/LengthFilter.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\filter\LengthIsFilter.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/filter/LengthIsFilter.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\AutoescapeTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/AutoescapeTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\BlockTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/BlockTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\CommentTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/CommentTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\CycleTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/CycleTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\DebugTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/DebugTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\ElifTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/ElifTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\ElseTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/ElseTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\EmptyTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/EmptyTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\ExtendsTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/ExtendsTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\FilterTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/FilterTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\FirstOfTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/FirstOfTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\ForTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/ForTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\ForeachTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/ForeachTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\IfChangedTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/IfChangedTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\IfEqualTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/IfEqualTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\IfNotEqualTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/IfNotEqualTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\IfTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/IfTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\IncludeTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/IncludeTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\LoadTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/LoadTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\NowTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/NowTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\RegroupTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/RegroupTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\SpaceLessTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/SpaceLessTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\SsiTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/SsiTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\TemplateTagTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/TemplateTagTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\UrlTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/UrlTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\WidthRatioTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/WidthRatioTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\WithTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/WithTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\abstract_\BranchTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/abstract_/BranchTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\abstract_\SingleTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/abstract_/SingleTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\tag\abstract_\WithEndTag.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/tag/abstract_/WithEndTag.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\CommentToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/CommentToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\EmptyNameToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/EmptyNameToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\HtmlToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/HtmlToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\RawToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/RawToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\TagToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/TagToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\Token.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/Token.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\TokenConst.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/TokenConst.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\token\VariableToken.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/token/VariableToken.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\utils\StringUtils.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/utils/StringUtils.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\utils\reflect\DotExpr.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/utils/reflect/DotExpr.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\utils\reflect\IterObject.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/utils/reflect/IterObject.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\app\template\utils\reflect\ObjectUtils.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/app/template/utils/reflect/ObjectUtils.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\cache\ObjectCache.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/cache/ObjectCache.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\context\AbstractContext.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/AbstractContext.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\context\AppContext.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/AppContext.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\context\ConfigerContext.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/ConfigerContext.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\context\Context.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/Context.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\context\Dictionary.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/Dictionary.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\context\ParentDictionary.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/api/ParentDictionary.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\util\DjangoUtils.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/util/DjangoUtils.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\util\ResScaner.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/util/ResScaner.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\src\org\django4j\util\ServletPathIter.java" afterPath="$PROJECT_DIR$/Django4jCore/src/main/java/org/django4j/util/ServletPathIter.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\test\org\django4j\example\hello\views\Index.java" afterPath="$PROJECT_DIR$/Django4jCore/src/test/java/org/django4j/example/hello/views/Index.java" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\test\org\django4j\example\hello\views\index.html" afterPath="$PROJECT_DIR$/Django4jCore/src/test/java/org/django4j/example/hello/views/index.html" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\test\org\django4j\example\hello\views\index\frame.html" afterPath="$PROJECT_DIR$/Django4jCore/src/test/java/org/django4j/example/hello/views/index/frame.html" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\test\org\django4j\example\hello\views\index\hello.html" afterPath="$PROJECT_DIR$/Django4jCore/src/test/java/org/django4j/example/hello/views/index/hello.html" />
+      <change type="MOVED" beforePath="E:\JEEWorkSpace\Django4J\test\org\django4j\example\hello\views\index\helloextend.html" afterPath="$PROJECT_DIR$/Django4jCore/src/test/java/org/django4j/example/hello/views/index/helloextend.html" />
+    </list>
+    <ignored path="Django4JTest.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/Dummy.txt" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1383217094843" ignored="false" />
+    <file path="/a.java" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1370522497814" ignored="false" />
+    <file path="/sample.java" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1370522512242" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1370610563509" ignored="false" />
+    <file path="/Action.java" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1370609569941" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/django4j/app/model/ModelHandle.java" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1383217289819" ignored="false" />
+    <file path="$PROJECT_DIR$/src/main/java/org/django4j/api/http/HeaderContext.java" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1383217289824" ignored="false" />
+    <file path="/fragment.java" changelist="958e8bf5-7784-4a22-ac7f-280588c8039a" time="1383217305632" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules />
+    <ui_properties />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Django4JTest" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Django4jCore/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="52" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DjangoHandler.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoRouter/src/main/java/org/django4j/app/djangoroute/DjangoHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="28" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticFileHandle.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFileHandle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="23" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StaticFile.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="23" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HandleInvoker.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/HandleInvoker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="23" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaperstryHandle.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryHandle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="23" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaperstryURLMatcher.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryURLMatcher.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="57" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#489#518#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TTT.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TTT.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="60" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.76">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DjangoRouter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DjangoRouter/src/main/java/org/django4j/app/djangoroute/DjangoRouter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="24" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="25" selection-start="521" selection-end="533" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="SYNC_SETTING" value="DONT" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/org/django4j/api/http/IRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/django4j/api/http/IResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/django4j/api/http/IHttp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/django4j/app/router/IHandle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/django4j/api/ParentDictionary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/django4j/api/string/AbstractString.java" />
+        <option value="$PROJECT_DIR$/DjangoRouter/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/Django4jCore/pom.xml" />
+        <option value="$PROJECT_DIR$/DjangoRouter/src/main/java/org/django4j/app/djangoroute/DjangoRouter.java" />
+        <option value="$PROJECT_DIR$/DjangoRouter/src/main/java/org/django4j/app/djangoroute/DjangoHandler.java" />
+        <option value="$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFileHandle.java" />
+        <option value="$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFile.java" />
+        <option value="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/HandleInvoker.java" />
+        <option value="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryHandle.java" />
+        <option value="$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryURLMatcher.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="MessagesViewTool">
+    <option name="autoscrollToSource" value="true" />
+    <option name="info" value="true" />
+    <option name="warnings" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>GPath inspectionsGroovy</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>GrailsGroovy</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JPA issues</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
+          </State>
+          <State>
+            <id>Play</id>
+          </State>
+          <State>
+            <id>Probable bugs</id>
+          </State>
+          <State>
+            <id>Properties Files</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>Rails</id>
+          </State>
+          <State>
+            <id>Ruby</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Django4JTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="Django4J">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="appearance" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="E:/Lib/java/j2ee" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\JEEWorkSpace\Django4J\StaticFileRouter\src\main\java\org\django4j\app" />
+      <recent name="E:\JEEWorkSpace\Django4J\DjangoRouter\src\main\java\org\django4j\app" />
+      <recent name="E:\JEEWorkSpace\Django4J\TapstrayRouter\src\main\java\org\django4j\app\" />
+    </key>
+  </component>
+  <component name="Regex">
+    <option name="pos1" value="218" />
+    <option name="pos2" value="218" />
+    <option name="pos3" value="162" />
+    <option name="pos4" value="444" />
+    <option name="pos5" value="162" />
+    <option name="autoUpdate" value="true" />
+    <option name="referenceOn" value="false" />
+    <option name="referencePos" value="0" />
+    <option name="showLabels" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.TTT">
+    <configuration default="false" name="TTT" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="org.django4j.app.tapestry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="org.django4j.app.tapestry.TTT" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TapstrayRouter" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.TTT" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.TTT" />
+      </list>
+    </recent_temporary>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">C:\Users\neverend\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="958e8bf5-7784-4a22-ac7f-280588c8039a" name="Default" comment="" />
+      <created>1370522319317</created>
+      <updated>1370522319317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3108108" sideWeight="0.491453" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.33070302" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32914925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27057183" sideWeight="0.4611111" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24318507" sideWeight="0.19417475" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24748924" sideWeight="0.67267686" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24318507" sideWeight="0.46879333" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32732317" sideWeight="0.66427547" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://D:/SDK/jdk1.6.0/src.zip!/java/lang/AbstractStringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="20" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/SDK/jdk1.6.0/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="13" selection-start="4464" selection-end="4464" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoRouter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="521" selection-end="533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django4jCore/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="52" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoRouter/src/main/java/org/django4j/app/djangoroute/DjangoRouter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="24" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DjangoRouter/src/main/java/org/django4j/app/djangoroute/DjangoHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="28" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFileHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StaticFileRouter/src/main/java/org/django4j/app/staticfile/StaticFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="23" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/HandleInvoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="23" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="23" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TaperstryURLMatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="57" selection-start="1666" selection-end="1666" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#489#518#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TapstrayRouter/src/main/java/org/django4j/app/tapestry/TTT.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="60" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.76">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="ideajad">
+    <property name="annotate" value="false" />
+    <property name="annotateFully" value="false" />
+    <property name="braces" value="false" />
+    <property name="clear" value="false" />
+    <property name="confirmNavigationTriggeredDecompile" value="true" />
+    <property name="dead" value="true" />
+    <property name="defaultInitializers" value="false" />
+    <property name="dissassemblerOnly" value="false" />
+    <property name="fieldsFirst" value="true" />
+    <property name="fileExtension" value="java" />
+    <property name="fullyQualifiedNames" value="false" />
+    <property name="indentation" value="4" />
+    <property name="intRadix" value="10" />
+    <property name="lineNumbersAsComments" value="true" />
+    <property name="longRadix" value="10" />
+    <property name="maxStringLength" value="64" />
+    <property name="nocast" value="false" />
+    <property name="noclass" value="false" />
+    <property name="nocode" value="false" />
+    <property name="noconv" value="false" />
+    <property name="noctor" value="false" />
+    <property name="nodos" value="false" />
+    <property name="nofd" value="false" />
+    <property name="noinner" value="false" />
+    <property name="nolvt" value="false" />
+    <property name="nonlb" value="false" />
+    <property name="outputDirectory" value="" />
+    <property name="packFields" value="3" />
+    <property name="packImports" value="7" />
+    <property name="prefixNumericalClasses" value="_cls" />
+    <property name="prefixNumericalFields" value="_fld" />
+    <property name="prefixNumericalLocals" value="_lcl" />
+    <property name="prefixNumericalMethods" value="_mth" />
+    <property name="prefixNumericalParameters" value="_prm" />
+    <property name="prefixUnusedExceptions" value="_ex" />
+    <property name="readonly" value="false" />
+    <property name="safe" value="false" />
+    <property name="sort" value="false" />
+    <property name="spaceAfterKeyword" value="false" />
+    <property name="splitStringsAtNewline" value="false" />
+    <property name="useTabs" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Django4J</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: javax.servlet:servlet-api:2.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3164557" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+
