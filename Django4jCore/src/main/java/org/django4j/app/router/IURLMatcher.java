@@ -1,9 +1,10 @@
 package org.django4j.app.router;
 
 import org.django4j.api.http.IRequest;
+import org.django4j.app.invoker.handle.InvokerHandle;
 
 public interface IURLMatcher {
-	IRouter match(IRequest request);
+	InvokerHandle match(IRequest request);
 
 	int priporty();
 }

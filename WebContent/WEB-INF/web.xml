@@ -3,7 +3,7 @@
   <display-name>Django4J</display-name>
   <filter>
     <filter-name>DjangoFilter</filter-name>
-    <filter-class>org.django4j.DjangoFilter</filter-class>
+    <filter-class>org.django4j.servlet.DjangoFilter</filter-class>
     <init-param>
       <param-name>app_page_package</param-name>
       <param-value>org.django4j.example.hello</param-value>

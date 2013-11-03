@@ -1,4 +1,4 @@
-package org.django4j.api.http;
+package org.django4j.servlet;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,18 +9,23 @@ import java.util.Map;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 
-import org.django4j.api.QueryDict;
+import org.django4j.api.Dict;
+import org.django4j.api.http.CookieContext;
+import org.django4j.api.http.HeaderContext;
+import org.django4j.api.http.ICookie;
+import org.django4j.api.http.IRequest;
+import org.django4j.api.http.HttpMethod;
+import org.django4j.api.http.ParamStringParser;
 
 public class DjangoRequest implements IRequest {
+	private final HttpServletRequest hsr;
 	private String path = null;
-	private QueryDict getDict = null;
-	private QueryDict postDict = null;
-	private QueryDict request = null;
-	private QueryDict rest = new QueryDict();
+	private Dict getDict = null;
+	private Dict postDict = null;
+	private Dict request = null;
 	private CookieContext cookieConext = null;
 	private HeaderContext metaConext = null;
 	private String context = null;
-	private final HttpServletRequest hsr;
 
 	public DjangoRequest(HttpServletRequest hsr) {
 		this.hsr = hsr;
@@ -38,7 +43,7 @@ public class DjangoRequest implements IRequest {
 	}
 
 	@Override
-	public QueryDict get() {
+	public Dict get() {
 		if (getDict == null) {
 			getDict = parseGet();
 		}
@@ -46,7 +51,7 @@ public class DjangoRequest implements IRequest {
 	}
 
 	@Override
-	public QueryDict post() {
+	public Dict post() {
 		if (postDict == null) {
 			postDict = parsePost();
 		}
@@ -54,27 +59,27 @@ public class DjangoRequest implements IRequest {
 	}
 
 	@Override
-	public QueryDict request() {
+	public Dict request() {
+		if (request == null) {
+			request = new Dict();
+			request.update(get());
+			request.update(post());
+		}
 		return request;
-	}
-
-	@Override
-	public QueryDict rest() {
-		return rest;
 	}
 
 	public void files() {
 
 	}
 
-	private QueryDict parseGet() {
+	private Dict parseGet() {
 		if (hsr == null)
 			return null;
 		String queryStr = hsr.getQueryString();
 		return ParamStringParser.parseParams(queryStr);
 	}
 
-	private QueryDict parsePost() {
+	private Dict parsePost() {
 		if (hsr == null)
 			return null;
 		if (hsr.getMethod().equalsIgnoreCase("post")) {
@@ -119,7 +124,7 @@ public class DjangoRequest implements IRequest {
 	}
 
 	@Override
-	public InputStream readStream() {
+	public InputStream is() {
 		try {
 			return hsr.getInputStream();
 		} catch (IOException e) {
@@ -148,7 +153,7 @@ public class DjangoRequest implements IRequest {
 	}
 
 	@Override
-	public Method action() {
-		return Method.build(hsr.getMethod());
+	public HttpMethod action() {
+		return HttpMethod.build(hsr.getMethod());
 	}
 }

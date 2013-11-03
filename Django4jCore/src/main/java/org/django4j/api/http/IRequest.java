@@ -1,26 +1,22 @@
 package org.django4j.api.http;
 
+import org.django4j.api.Dict;
+
 import java.io.InputStream;
 
-import org.django4j.api.QueryDict;
-
-public interface IRequest extends IHttp{
+public interface IRequest extends IHttp {
 
     String path();
 
-    Method action();
+    HttpMethod action();
 
-    QueryDict get();
+    Dict get();
 
-    QueryDict post();
+    Dict post();
 
-    QueryDict request();
+    Dict request();
 
-    QueryDict rest();
-
-
-
-    InputStream readStream();
+    InputStream is();
 
     String content();
 }

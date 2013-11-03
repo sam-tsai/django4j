@@ -9,11 +9,11 @@ import org.django4j.util.DjangoUtils;
  * Created with IntelliJ IDEA. User: neverend Date: 13-6-7 Time: 下午8:36 To
  * change this template use File | Settings | File Templates.
  */
-public class Method {
+public class HttpMethod {
 
-	public static Method GET = new Method("get");
-	public static Method POST = new Method("post");
-	private static Map<String, Method> methodMap = new HashMap<String, Method>();
+	public static HttpMethod GET = new HttpMethod("get");
+	public static HttpMethod POST = new HttpMethod("post");
+	private static Map<String, HttpMethod> methodMap = new HashMap<String, HttpMethod>();
 
 	static {
 		methodMap.put(GET.str(), GET);
@@ -22,11 +22,11 @@ public class Method {
 
 	private final String _str;
 
-	private Method(String methodStr) {
+	private HttpMethod(String methodStr) {
 		_str = methodStr;
 	}
 
-	public static Method build(String methodStr) {
+	public static HttpMethod build(String methodStr) {
 		if (DjangoUtils.isEmpty(methodStr)) {
 			throw new IllegalArgumentException("empty method");
 		}
@@ -34,7 +34,7 @@ public class Method {
 		if (methodStr.contains(str)) {
 			return methodMap.get(str);
 		} else {
-			return methodMap.put(str, new Method(str));
+			return methodMap.put(str, new HttpMethod(str));
 		}
 	}
 

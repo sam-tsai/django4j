@@ -1,4 +1,6 @@
-package org.django4j.api.http;
+package org.django4j.servlet;
+
+import org.django4j.api.http.ICookie;
 
 import javax.servlet.http.Cookie;
 

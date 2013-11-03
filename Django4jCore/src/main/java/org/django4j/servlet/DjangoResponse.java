@@ -1,4 +1,8 @@
-package org.django4j.api.http;
+package org.django4j.servlet;
+
+import org.django4j.api.http.CookieContext;
+import org.django4j.api.http.HeaderContext;
+import org.django4j.api.http.IResponse;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;

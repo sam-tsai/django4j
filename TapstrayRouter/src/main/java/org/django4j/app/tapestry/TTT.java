@@ -6,6 +6,8 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.django4j.app.invoker.Q;
+
 public class TTT {
 
 	public void doAct(@Q("s") String a) {

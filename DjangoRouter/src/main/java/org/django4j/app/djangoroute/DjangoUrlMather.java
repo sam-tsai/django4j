@@ -1,35 +1,35 @@
 package org.django4j.app.djangoroute;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.regex.MatchResult;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
 
 import org.django4j.api.http.IRequest;
-import org.django4j.app.router.IRouter;
+import org.django4j.app.invoker.handle.InvokerHandle;
 import org.django4j.app.router.IURLMatcher;
 
+import com.google.code.regexp.MatchResult;
+import com.google.code.regexp.Matcher;
+import com.google.code.regexp.Pattern;
+
 public class DjangoUrlMather implements IURLMatcher {
-	public static class RoutePattern {
-		Pattern p;
-		String[] groupName;
-		String  handlerClassName;
-		String methodName;
+
+	Map<Pattern, InvokerHandle> map = new HashMap<Pattern, InvokerHandle>();
+
+	public void addMap(String patternStr, InvokerHandle handle) {
+		Pattern p = Pattern.compile(patternStr);
+		map.put(p, handle);
 	}
 
-	private List<RoutePattern> lsRouteReg = new ArrayList<RoutePattern>();
-	private DjangoHandler _handler = new DjangoHandler();
 	@Override
-	public IRouter match(IRequest request) {
+	public InvokerHandle match(IRequest request) {
 		String path = request.path();
-		for (RoutePattern rp : lsRouteReg) {
-			Matcher m = rp.p.matcher(path);
+		for (Entry<Pattern, InvokerHandle> e : map.entrySet()) {
+			Matcher m = e.getKey().matcher(path);
 			if (m.matches()) {
-				MatchResult s= m.toMatchResult();
-				//TODO getGroupData and then match the groupName
-				//TODO put the data on threadLocalData or in requestData
-				return _handler;
+				MatchResult s = m.toMatchResult();
+				request.request().updateSignal(s.namedGroups());
+				return e.getValue();
 			}
 		}
 		return null;

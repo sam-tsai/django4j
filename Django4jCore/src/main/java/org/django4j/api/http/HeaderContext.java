@@ -11,7 +11,7 @@ import java.util.Map;
  * Time: 下午9:20
  * To change this template use File | Settings | File Templates.
  */
-class HeaderContext extends Dictionary<Object> {
+public class HeaderContext extends Dictionary<Object> {
     public final static String CONTENT_LENGTH = "CONTENT_LENGTH";
     public final static String CONTENT_TYPE = "CONTENT_TYPE";
     public final static String HTTP_ACCEPT_ENCODING = "HTTP_ACCEPT_ENCODING";

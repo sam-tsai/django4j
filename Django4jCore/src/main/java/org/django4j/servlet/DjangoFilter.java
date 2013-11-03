@@ -1,4 +1,4 @@
-package org.django4j;
+package org.django4j.servlet;
 
 import java.io.IOException;
 
@@ -10,7 +10,8 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 
-import org.django4j.api.http.DjangoRequest;
+import org.django4j.DjangoConst;
+import org.django4j.DjangoEngine;
 import org.django4j.api.Context;
 
 /**
@@ -20,7 +21,7 @@ import org.django4j.api.Context;
  * <pre>
  *  <filter>
  *     <filter-name>DjangoFilter</filter-name>
- *     <filter-class>org.django4j.DjangoFilter</filter-class>
+ *     <filter-class>org.django4j.servlet.DjangoFilter</filter-class>
  *     <init-param>
  *        <param-name>app_page_package</param-name>
  *        <param-value>org.django4j.example.hello</param-value>

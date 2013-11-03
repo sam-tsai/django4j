@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.StringTokenizer;
 
 import org.django4j.api.IAppendable;
-import org.django4j.api.http.Method;
+import org.django4j.api.http.HttpMethod;
 import org.django4j.api.http.IRequest;
 import org.django4j.app.router.IRouter;
 import org.django4j.app.router.IURLMatcher;
@@ -42,7 +42,7 @@ public class TaperstryURLMatcher implements IURLMatcher {
 	}
 
 	private IRouter match(IRequest request, StringBuilder stringBuilder,
-			StringTokenizer st, Method action, int argCounts) {
+			StringTokenizer st, HttpMethod action, int argCounts) {
 		if (!st.hasMoreTokens()) {
 			return match(argCounts);
 		}
@@ -70,7 +70,7 @@ public class TaperstryURLMatcher implements IURLMatcher {
 	@Override
 	public IRouter match(IRequest request) {
 		String url = request.path();
-        Method action = request.action();
+        HttpMethod action = request.action();
 		int argCounts = 0;
 		if (action.isGet()) {
 			argCounts = request.get().size();
@@ -101,7 +101,7 @@ public class TaperstryURLMatcher implements IURLMatcher {
 		return defhi;
 	}
 
-	private IRouter match(Method action, int argCounts) {
+	private IRouter match(HttpMethod action, int argCounts) {
 		if (!m.containsKey(action.str())) {
 			return null;
 		}
